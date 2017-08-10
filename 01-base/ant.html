@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MVVM最初的形态</title>
+</head>
+<body>
+  <h2>MVVM最初的形态</h2>
+  <hr>
+
+  <input type="text" id="nickName">
+  <div id="txt"></div>
+
+  <script type="text/javascript">
+    document.getElementById('nickName').addEventListener('keyup', function (event) {
+      document.getElementById('txt').innerHTML = event.target.value;
+    });
+  </script>
+</body>
+</html>
