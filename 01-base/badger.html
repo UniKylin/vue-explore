@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>基于Object实现的MVVM</title>
+</head>
+<body>
+  
+  <h2>Using Object to implement MVVM</h2>
+  <hr>
+
+  <script type="text/javascript">
+    var obj = {};
+
+    Object.defineProperty(obj, 'nickName', {
+      get: function (val) {
+        console.log('Get init, val ===> ' + val);
+      },
+      set: function () {
+        console.log('Set init...');
+      }
+    });
+
+  </script>
+
+</body>
+</html>
